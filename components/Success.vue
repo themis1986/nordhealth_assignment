@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <ClientOnly>
     <provet-card class="card">
@@ -25,12 +23,6 @@
 </template>
 
 <style scoped>
-.card {
-  max-width: calc(100vw / 4);
-  min-width: 30rem;
-  height: 25rem;
-}
-
 .icon-container {
   width: 100%;
   height: 100%;

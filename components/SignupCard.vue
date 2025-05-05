@@ -1,12 +1,5 @@
 <script setup lang="ts">
-interface InputEvent {
-  target: HTMLInputElement;
-}
-
-enum FieldType {
-  EMAIL = "email",
-  PASSWORD = "password",
-}
+import { FieldType, type InputEvent } from "@/types/types";
 
 const email = ref("");
 const password = ref("");
@@ -121,11 +114,3 @@ function handlePasswordVisibility(event: PointerEvent) {
     </provet-card>
   </ClientOnly>
 </template>
-
-<style scoped>
-.card {
-  max-width: calc(100vw / 4);
-  min-width: 30rem;
-  height: 25rem;
-}
-</style>
